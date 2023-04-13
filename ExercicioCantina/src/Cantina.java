@@ -17,12 +17,7 @@ public class Cantina {
         ArrayList<Ingrediente> ingredientes = new ArrayList<>();
         int opcao = 0;
         while (opcao != 5) {
-            opcao = Integer.parseInt(JOptionPane.showInputDialog("Informe os ingredientes escolhidos:\n"
-                    + "1-Bacon\n"
-                    + "2-Mussarela\n"
-                    + "3-Tomate\n"
-                    + "4-Queijo\n"
-                    + "5-Sair"));
+            opcao = Integer.parseInt(JOptionPane.showInputDialog("Informe os ingredientes escolhidos:\n" + "1-Bacon\n" + "2-Mussarela\n" + "3-Tomate\n" + "4-Queijo\n" + "5-Sair"));
             switch (opcao) {
                 case 1:
                     ingredientes.add(new Ingrediente("Bacon", 2.0));
